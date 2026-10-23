@@ -1,0 +1,31 @@
+name: Feature request
+description: Propose a capability or a change in behaviour
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What you cannot do today, and in which kind of application or workflow it shows up.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: How it could work — API, config, SDK surface. Alternatives you considered.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options: [Media / codecs, Protocol / transport, Spatial audio, Moderation & safety, Recording, Scale / operations, Unity, Unreal, Godot, Web, Native, Server SDKs, Docs]
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This stays within voice for games and real-time apps (see CONTRIBUTING → scope), not a general chat or streaming product.
+          required: true

@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Server version
+      placeholder: e.g. 1.8.2 (GET /health → version)
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      multiple: true
+      options: [Server, Native core / C ABI, Web SDK, Unity SDK, Unreal SDK, Godot SDK, Server SDKs, Docs, Release / CI]
+    validations:
+      required: true
+  - type: input
+    id: sdk
+    attributes:
+      label: SDK / engine / platform
+      placeholder: e.g. Unity 2022.3 LTS, Android arm64, Web SDK 1.8.2 in Chrome 130
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Steps, config (secrets removed) and logs. `RUST_LOG=debug` server logs and SDK logs help a lot.
+      render: text
+  - type: textarea
+    id: network
+    attributes:
+      label: Network details (voice issues)
+      description: Transport used (AURX UDP / QUIC / WebRTC / tunnel), NAT type, TURN on/off, loss/RTT shown by the quality meter.
