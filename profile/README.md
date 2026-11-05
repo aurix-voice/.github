@@ -10,7 +10,7 @@ for Unity, Unreal, Godot, Web and native C. AGPL-3.0 server, permissive client l
 | Repository | What it is |
 |---|---|
 | [aurix](https://github.com/aurix-voice/aurix) | Server, protocols, SDKs, docs, release pipeline — the whole platform |
-| [Aurix Cloud](https://aurix.sh) | Hosted Aurix with managed capacity, regions and billing (closed source, [docs](https://aurix.sh/docs/)) |
+| [Aurix Cloud](https://aurix.run) | Hosted Aurix with managed capacity, regions and billing (closed source, [docs](https://aurix.run/docs/)) |
 
 **Start here**
 
